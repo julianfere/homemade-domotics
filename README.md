@@ -11,7 +11,7 @@ This project is a homemade domotics system, that uses a Raspberry Pi and a few e
 - [ ] History of actions
 - [ ] Endpoint for changing the status of the roomm (in case of a manual change)
 - [ ] Integrate with bluetooth scrips for comunication with the arduino
-- [ ] Integrate with SmartThings for lights control
+- [ ] Integrate with IoT (https://github.com/codetheweb/tuyapi)
 
 ## Client
 #### TODO
