@@ -19,7 +19,14 @@ export const handleLogin = async (req: Request, res: Response) => {
 
     const token = Token.buildFromUser(user);
 
-    sendOk(res, {token})
+    res.cookie('token', token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      expires: new Date(Date.now() + 1000 * 60 * 60 * 24 * 7)
+      }
+    )
+
+    sendOk(res)
   } catch (error) {
     sendInternalServerError(res, error);
   }

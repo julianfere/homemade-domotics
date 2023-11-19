@@ -14,7 +14,7 @@ export const validateSchema = (schema: Schemas) => async (req: Request, res: Res
 };
 
 export const valdiateJwt = (req: Request, res: Response, next: NextFunction) => {
-  const token = req.headers.authorization?.split(' ')[1];
+  const token = req.cookies.token;
 
   if (Token.isValid(token)) {
     next();

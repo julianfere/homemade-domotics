@@ -1,10 +1,10 @@
 import { Response } from "express";
 
-export const sendOk = (res: Response, data: any) => {
+export const sendOk = (res: Response, data?: any) => {
   res.status(200).json({ data });
 }
 
-export const sendCreated = (res: Response, data: any) => {
+export const sendCreated = (res: Response, data?: any) => {
   res.status(201).json({ data });
 }
 
