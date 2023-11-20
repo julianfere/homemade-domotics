@@ -15,7 +15,8 @@ This project is a homemade domotics system, that uses a Raspberry Pi and a few e
 
 ## Client
 #### TODO
-- [ ] Setup react native project
+- [X] Setup react native project
+- [X] [AppTheme](https://www.realtimecolors.com/dashboard?colors=d6e2f5-03070c-142d52-141f2e-2f67bc&fonts=Poppins-Poppins)
 - [ ] Login screen (store token in cookies)
 - [ ] Main screen with current status of the room
 - [ ] History screen
