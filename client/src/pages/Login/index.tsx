@@ -5,12 +5,13 @@ import {RootStackParamList} from '../../../App';
 import Button from '../../components/Button';
 import Container from '../../components/Container';
 import Typography from '../../components/Typography';
+import Input from '../../components/Input';
 
 const Login = ({
   navigation,
 }: NativeStackScreenProps<RootStackParamList, Routes.LOGIN>) => {
   return (
-    <Container.Flex column>
+    <Container.Flex column gap={10}>
       <Typography.H1>H1</Typography.H1>
       <Typography.H2>H2</Typography.H2>
       <Typography.H3>H3</Typography.H3>
@@ -32,6 +33,8 @@ const Login = ({
         onPress={() => navigation.navigate(Routes.HOME)}
         text="Button"
       />
+      <Input />
+      <Input.Numeric />
     </Container.Flex>
   );
 };
