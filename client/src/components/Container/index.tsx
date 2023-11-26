@@ -11,7 +11,7 @@ interface FlexibleContainerProps extends ContainerProps {
   column?: boolean;
   justify?: 'flex-start' | 'flex-end' | 'center' | 'space-between';
   align?: 'flex-start' | 'flex-end' | 'center' | 'space-between';
-  gap?: string;
+  gap?: number;
   wrap?: boolean;
 }
 

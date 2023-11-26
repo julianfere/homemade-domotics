@@ -4,7 +4,6 @@ type FlexProps = {
   column?: boolean;
   justify?: 'flex-start' | 'flex-end' | 'center' | 'space-between';
   align?: 'flex-start' | 'flex-end' | 'center' | 'space-between';
-  gap?: string;
   wrap?: boolean;
 };
 
@@ -28,6 +27,5 @@ export const FlexConainer = styled(BaseContainer)<FlexContainerProps>`
   flex-direction: ${({column}) => (column ? 'column' : 'row')};
   justify-content: ${({justify}) => justify ?? 'flex-start'};
   align-items: ${({align}) => align ?? 'flex-start'};
-  gap: ${({gap}) => gap ?? '0'};
   flex-wrap: ${({wrap}) => (wrap ? 'wrap' : 'nowrap')};
 `;
